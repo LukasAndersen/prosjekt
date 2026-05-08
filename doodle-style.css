@@ -1,7 +1,22 @@
 body{
-    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(27, 23, 44);
+}
+
+.container{
+    position: relative;
+    
 }
 
 #board{
-    background-color: green;
+    background-image: url(./doodler-img/doodlejumpbg.png);
+}
+
+.poengDisplay{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 25px;
 }
