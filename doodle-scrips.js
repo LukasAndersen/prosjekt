@@ -106,7 +106,7 @@ function oppdater() {
     for (let i = 0; i < platformArray.length; i++) {
         let tile = platformArray[i] //objektene(platformene som er pushet) blir kalt tile lokalt i if-løkken
 
-        if (fartY < 0 && doodler.y < boardHeight * 3 / 4) {
+        if (fartY < 0 && doodler.y < boardHeight * 3 / 5) {
             tile.y += -startfartY
         }
 
@@ -149,7 +149,7 @@ function flyttDoodler(e) {
 
         poeng = 0
         poengDisplay.innerHTML = poeng
-        
+
         gameOver = false
         placePlatforms()
     }
@@ -171,7 +171,7 @@ function placePlatforms() {
     platformArray.push(startPlatform)
 
     //6 andre platformer 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         let randomX = Math.random() * boardWidth * 3 / 4
 
         let platform = {
