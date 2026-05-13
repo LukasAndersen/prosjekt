@@ -83,7 +83,6 @@ function oppdater() {
     if (gameOver) {
         ctx.fillStyle = "black"
         ctx.font = "16px sans-serif"
-        ctx.zIndex = "-10"
         ctx.fillText("Game Over: press 'space' to Restart", boardWidth / 7, boardHeight * 7 / 8)
     }
 
@@ -95,6 +94,7 @@ function oppdater() {
     else if (doodler.x + doodlerWidth < 0) {
         doodler.x = boardWidth
     }
+
     fartY += g
     doodler.y += fartY
     if (doodler.y > boardHeight) {
@@ -170,7 +170,7 @@ function placePlatforms() {
     }
     platformArray.push(startPlatform)
 
-    //6 andre platformer 
+    //5 andre platformer 
     for (let i = 0; i < 5; i++) {
         let randomX = Math.random() * boardWidth * 3 / 4
 
