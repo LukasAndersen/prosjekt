@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Luckiest+Guy&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, a{
+      font-family: "Luckiest Guy", cursive;
+}
+
+body{
+    font-family: "Comic Neue", cursive;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    max-width: min(1000px, 90%);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: rgba(0,0,0, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 0;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+header a{
+    color: white;
+}
+
+header{
+    background-image: url(./doodler-img/Doodle_Jump_Space_Chase.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.hero .container{
+    min-height: 0;
+    background-color: rgba(255, 156, 117, 0.9);
+    padding: 40px;
+    border-radius: 10px 10px 100px 10px;
+    text-align: center;
+}
+
+
+footer{
+    background-color: antiquewhite;
+
+}
+footer .container{
+    min-height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#how-to-play{
+    background-color: aliceblue;
+    padding: 100px 0 100px 0;
+}
+#how-to-play .container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    min-height: auto;
+    gap: 40px;
+}
+
+.pc-img{
+    display: grid;
+    margin-right: 50px;
+}
+
+.pc-img .over{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.pc-img img{
+    box-shadow: 20px 10px 20px rgba(0,0,0, 0.4);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+
+#play-game{
+    padding: 20px;
+    background-color: orange;
+    align-self: flex-start;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.4);
+    margin-top: 30px;
+
+}
+
+#about-game{
+    background-color: antiquewhite;
+    padding: 100px 0 100px 0;
+}
+
+#about-game .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.info{
+    line-height: 1.5;
+    text-align: center;
+    padding: 30px;
+}
+
+#space-topic{
+    background-color: rgb(30, 26, 50);
+    padding: 100px 0 100px 0;
+    color: white;
+}
+
+.content{
+    text-align: center;
+}
